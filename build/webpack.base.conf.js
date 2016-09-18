@@ -1,5 +1,3 @@
-var px2rem = require('postcss-px2rem');
-
 var path = require('path')
 var config = require('../config')
 var utils = require('./utils')
@@ -57,10 +55,10 @@ module.exports = {
 				include: projectRoot,
 				exclude: /node_modules/
 			},
-			// {
-			// 	test: /\.css$/,
-			// 	loader: "style-loader!css-loader!postcss-loader"
-			// },
+			{
+				test: /\.css$/,
+				loader: "style-loader!css-loader!postcss-loader"
+			},
 			{
 				test: /\.json$/,
 				loader: 'json'
@@ -93,7 +91,7 @@ module.exports = {
 	// },
 	vue: {
 		loaders: utils.cssLoaders(),
-		postcss: [require('postcss-px2rem')({
+		postcss: [require('postcss-flexible')({
 			baseDpr: 2,             // base device pixel ratio (default: 2)
 			threeVersion: false,    // whether to generate @1x, @2x and @3x version (default: false)
 			remVersion: true,       // whether to generate rem version (default: true)
