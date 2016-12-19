@@ -2,6 +2,7 @@ var path = require('path')
 var config = require('../config')
 var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
+var webpack = require('webpack')
 
 module.exports = {
 	entry: {
@@ -23,6 +24,7 @@ module.exports = {
 			'static': path.resolve(__dirname, '../static'),
 			'data': path.resolve(__dirname, '../src/vuex'),
 			'util': path.resolve(__dirname, '../src/utils'),
+			'jquery': 'jquery'
 		}
 	},
 	resolveLoader: {
@@ -106,4 +108,11 @@ module.exports = {
 			cascade: true  // 不美化输出 css
 		}
 	},
+	// 增加一个plugins
+	plugins: [
+		new webpack.ProvidePlugin({
+			$: "jquery",
+			jQuery: "jquery"
+		})
+	]
 }

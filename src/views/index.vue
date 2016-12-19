@@ -46,7 +46,7 @@
                 loop: true,
                 initialSlide: 0,
                 speed: 300,
-                spaceBetween: 30,
+                spaceBetween: 0,
                 // 回调函数
                 onSlideChangeEnd(swiper) {
                     util.exec(this, swiper, _this);
