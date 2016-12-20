@@ -21,6 +21,7 @@
                 // 旋转
             	$(".block").on("click", function () {
             		var _el = $(this);
+                    _el.unbind();
                     console.log("004");
             		Tween(0, 1440, 3000, "Quart.easeIn", function (value, isEnding) {
             			console.log(value);
@@ -56,6 +57,8 @@
         height: @w;
         margin: 0 -@w/2;
         background: #f55555;
+
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
 
     }
 </style>
