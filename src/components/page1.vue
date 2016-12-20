@@ -18,9 +18,7 @@
                 console.log("001");
             });
 
-            $(() => {
-                console.info("这是第一个页面");
-            });
+
         }
     }
 </script>

@@ -11,6 +11,7 @@
             <page2></page2>
             <page3></page3>
             <page4></page4>
+            <page5></page5>
         </div>
     </div>
 </template>
@@ -22,6 +23,7 @@
     import Page2 from "components/page2"
     import Page3 from "components/page3"
     import Page4 from "components/page4"
+    import Page5 from "components/page5"
     export default {
         data() {
             return {}
@@ -34,6 +36,7 @@
             Page2,
             Page3,
             Page4,
+            Page5,
         },
         ready() {
             let _this = this;
@@ -44,7 +47,7 @@
                 // Optional parameters
                 direction: 'vertical',
                 loop: true,
-                initialSlide: 0,
+                initialSlide: 4,
                 speed: 300,
                 spaceBetween: 0,
                 // 回调函数
