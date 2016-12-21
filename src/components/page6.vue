@@ -4,8 +4,11 @@
     </div>
 </template>
 <script type="text/javascript">
-    import * as actions from 'data/actions'
-    import Tween from 'assets/js/tweenAnimation'
+    // 引入工具函数
+    import utils from "util"
+
+    import * as actions from 'data/actions';
+    import Tween from 'assets/js/tweenAnimation';
     export default {
         vuex: {
             actions
@@ -17,21 +20,21 @@
             })
 
             $(function () {
-            	console.log(Tween);
                 // 旋转
             	$(".block").on("click", function () {
+                    console.log(utils.getCookie("token"));
+
             		var _el = $(this);
                     _el.unbind();
-                    console.log("004");
             		Tween(0, 1440, 3000, "Quart.easeIn", function (value, isEnding) {
-            			console.log(value);
+            			// console.log(value);
             			_el.css({
             				"transform": "rotate(" + value + "deg)"
             			});
 
             			if (isEnding) {
             				Tween(0, 1800, 8000, "Quart.easeOut", function (value, isEnding) {
-            					console.log(value);
+            					// console.log(value);
             					_el.css({
             						"transform": "rotate(" + value + "deg)"
             					});
