@@ -16,5 +16,5 @@ exports.exec = (container, swiper, _this) => {
     let index = container.loop ? (swiper.activeIndex - 1 + funcsLength) % funcsLength : (swiper.activeIndex + funcsLength) % funcsLength;
     // 执行当前页面的函数
     // console.log(swiper);
-    _this.pageCallFuncs[index]();
+    _this.pageCallFuncs[index](container, swiper, _this);
 }
