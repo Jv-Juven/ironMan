@@ -11,22 +11,28 @@
             <page2></page2>
             <page3></page3>
             <page4></page4>
+            <page5></page5>
             <page6></page6>
+            <page7></page7>
         </div>
     </div>
 </template>
 <script type="text/javascript">
-    import Swiper from "swiper"
-    import util from "util/pages"
-    import * as getters from 'data/getters'
-    import Page1 from "components/page1"
-    import Page2 from "components/page2"
-    import Page3 from "components/page3"
-    import Page4 from "components/page4"
-    import Page6 from "components/page6"
+    import Swiper from "swiper";
+    import util from "util/pages";
+    import * as getters from 'data/getters';
+    import Page1 from "components/page1";
+    import Page2 from "components/page2";
+    import Page3 from "components/page3";
+    import Page4 from "components/page4";
+    import Page5 from "components/page5";
+    import Page6 from "components/page6";
+    import Page7 from "components/page7";
     export default {
         data() {
-            return {}
+            return {
+                bodySwiper: {}
+            }
         },
         vuex: {
             getters
@@ -36,18 +42,20 @@
             Page2,
             Page3,
             Page4,
+            Page5,
             Page6,
+            Page7
         },
         ready() {
             let _this = this;
             // 计算当前所有页面的总数
             console.log("getters:", this.pageCallFuncs);
             // 初始化Swiper
-            let bodySwiper = new Swiper(".swiper-body", {
+            this.bodySwiper = new Swiper(".swiper-body", {
                 // Optional parameters
                 direction: 'vertical',
-                loop: true,
-                initialSlide: 4,
+                loop: false,
+                initialSlide: 3,
                 speed: 300,
                 spaceBetween: 0,
                 // 回调函数

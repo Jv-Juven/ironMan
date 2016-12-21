@@ -1,5 +1,5 @@
 <template>
-    <div class="swiper-slide single-page">
+    <div class="swiper-slide swiper-no-swiping single-page">
         <button @click="delCookie">清楚token</button>
         <div id="block" class="block"></div>
     </div>
