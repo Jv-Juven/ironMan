@@ -9,16 +9,19 @@
     import utils from "util";
 
     import * as actions from 'data/actions';
+    import * as getters from 'data/getters';
     import Tween from 'assets/libjs/tweenAnimation';
     export default {
         data() {
             return {
                 token: "", // token
-                result: {}, // 后端返回的数据
-                awardObj: {} // 获奖情况数据对象
+                // result: {}, // 后端返回的数据
+                awardObj: {}, // 获奖情况数据对象
+                container: {} // swiper实例对象
             }
         },
         vuex: {
+            getters,
             actions
         },
         events: {
@@ -29,15 +32,17 @@
                 // let url = "http://localhost:1227/lottery";
                 $.get(url, (res) => {
                     console.info(res);
-                    thisVm.result = res.result;
+                    thisVm.setLotteryResult(res.result);
                     thisVm.token = res.token;
                     // 设置已抽奖token
                     utils.setCookie("ironMan_token", res.token);
+                    utils.setCookie("ironMan_status", thisVm.result.status);
                 });
                 console.log("请求的链接：%c %s", "color: #eb5e18", url);
             },
             // 抽奖结果展示
             showLotteryResult() {
+                this.container.slideNext();
                 if (this.result.status === 1) {
                     console.log("未中奖");
                     return;
@@ -78,9 +83,8 @@
             // 页面函数队列
             this.pushFuncs((container, swiper, _this) => {
                 console.log("004");
+                thisVm.container = swiper;
             })
-
-            console.warn("tweenjs");
 
             // 抽奖 旋转
             $(".block").on("click", function () {
@@ -88,6 +92,7 @@
                 let token = utils.getCookie("ironMan_token");
                 if (!!token && token.length > 0) {
                     console.log("对不起，您已抽过奖。");
+                    thisVm.setIsFirst(false);
                     return;
                 }
                 // 抽奖
