@@ -12,6 +12,7 @@
         vuex: {
             actions
         },
+        created() {},
         ready() {
             // 页面函数队列
             this.pushFuncs(() => {
