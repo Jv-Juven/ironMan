@@ -14,7 +14,7 @@
 		created() {
 			// 微信头设置
 			setwx({
-			 	debug: true,
+			 	debug: false,
 			 	title: "谁是你心中真正的超级英雄? or 边个係你心目中嘅Hero?",
 			 	desc: "“铁”粉大召集，神秘人物带你酷炫飞越香港上空!",
 			 	imgurl: "http://myteamproject.oss-cn-beijing.aliyuncs.com/hxjj/7-14/06.jpg",
@@ -23,7 +23,7 @@
 	}
 </script>
 
-<style>
+<style lang="less">
 html {
 	height: 100%;
 }
@@ -53,4 +53,5 @@ body {
 	width: 100%;
 	height: 100%;
 }
+@import "assets/css/animate.css";
 </style>

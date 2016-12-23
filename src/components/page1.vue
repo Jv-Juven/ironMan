@@ -18,7 +18,7 @@
             this.pushFuncs(() => {
                 console.log("001");
 
-                $(".box").addClass("boxed");
+                $(".box").addClass("floating");
             });
 
         }
