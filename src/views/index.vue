@@ -55,7 +55,7 @@
                 // Optional parameters
                 direction: 'vertical',
                 loop: false,
-                initialSlide: 3,
+                initialSlide: 0,
                 speed: 300,
                 spaceBetween: 0,
                 // 回调函数

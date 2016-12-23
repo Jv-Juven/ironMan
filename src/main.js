@@ -3,6 +3,7 @@ import App from './App'
 import VueRouter from 'vue-router'
 import Routers from './router'
 // import Vuex from 'vuex'
+// import vConsole from ""
 
 // 设置网页的dpr
 import LibFlexible from 'lib-flexible'

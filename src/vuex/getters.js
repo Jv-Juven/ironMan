@@ -12,7 +12,7 @@ export const pageCallFuncs = () => {
 export const isFirst = () => {
     return appData.isFirst;
 }
-
+// 获取抽奖结果
 export const result = () => {
     return appData.result;
 }

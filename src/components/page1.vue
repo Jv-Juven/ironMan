@@ -17,8 +17,9 @@
             // 页面函数队列
             this.pushFuncs(() => {
                 console.log("001");
-            });
 
+                $(".box").addClass("boxed");
+            });
 
         }
     }
@@ -26,8 +27,8 @@
 <style lang="less" media="screen">
     @import "~swiper/src/less/swiper.less";
     .box {
-        width: rem(100px);
-        height: 100px;
+        width: 100px;
+        height: 100px; /*no*/
         border: dpr(1px) solid red;
         font-size: dpr(16px);
         background: white;
