@@ -10,6 +10,7 @@ module.exports = {
 	},
 	output: {
 		path: config.build.assetsRoot,
+		// 表示资源的发布地址，当配置过该属性后，打包文件中所有通过相对路径引用的资源都会被配置的路径所替换
 		publicPath: process.env.NODE_ENV === 'production' ? config.build.assetsPublicPath : config.dev.assetsPublicPath,
 		filename: '[name].js'
 	},
