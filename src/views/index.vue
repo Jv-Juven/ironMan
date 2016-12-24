@@ -7,6 +7,7 @@
             <!-- <div class="swiper-slide single-page">1</div>
             <div class="swiper-slide single-page">2</div>
             <div class="swiper-slide single-page">3</div> -->
+            <loading></loading>
             <page1></page1>
             <page2></page2>
             <page3></page3>
@@ -21,6 +22,7 @@
     import Swiper from "swiper";
     import util from "util/pages";
     import * as getters from 'data/getters';
+    import Loading from "components/loading";
     import Page1 from "components/page1";
     import Page2 from "components/page2";
     import Page3 from "components/page3";
@@ -38,6 +40,7 @@
             getters
         },
         components: {
+            Loading,
             Page1,
             Page2,
             Page3,
@@ -54,6 +57,7 @@
             this.bodySwiper = new Swiper(".swiper-body", {
                 // Optional parameters
                 direction: 'vertical',
+                noSwiping: true,
                 loop: false,
                 initialSlide: 0,
                 speed: 300,
@@ -68,8 +72,38 @@
                         util.exec(this, swiper, _this);
                     }
                 },
+                onImagesReady(swiper) {
+                    console.log(swiper);
+                    fullScreen(".full-screen");
+                    swiper.slideNext();
+                }
             });
         }
+    }
+
+    // 全屏图兼容不同尺寸的显示屏
+    function fullScreen (selector) {
+        if (selector === null || selector === undefined) {
+            return;
+        }
+        var el = $(selector);
+        var elWidth = el.width();
+        var elHeight = el.height();
+        var clientWidth = $(window).width();
+        var clientHeight = $(window).height();
+        var widthScale = clientWidth/elWidth;
+        var heightScale = clientHeight/elHeight;
+        var scale = widthScale > heightScale ? widthScale : heightScale; // 取比例大的
+        var width = elWidth * scale;
+        var height = elHeight * scale;
+        el.css({
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            width: width + "px",
+            height: height + "px",
+            margin: "-" + height/2 + "px -" + width/2 + "px"
+        });
     }
 
 </script>
@@ -83,5 +117,11 @@
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, .5);
+    }
+    .full-screen {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
 </style>
