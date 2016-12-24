@@ -93,7 +93,7 @@ module.exports = {
 	// 	formatter: require('eslint-friendly-formatter')
 	// },
 	vue: {
-		loaders: utils.cssLoaders(),
+		loaders: Object.assign({}, utils.cssLoaders()),
 		// postcss: [require('postcss-flexible')({
 		// 	baseDpr: 2,             // base device pixel ratio (default: 2)
 		// 	threeVersion: false,    // whether to generate @1x, @2x and @3x version (default: false)

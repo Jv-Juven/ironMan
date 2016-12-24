@@ -57,9 +57,9 @@
             this.bodySwiper = new Swiper(".swiper-body", {
                 // Optional parameters
                 direction: 'vertical',
-                noSwiping: true,
+                noSwiping: false,
                 loop: false,
-                initialSlide: 0,
+                initialSlide: 6,
                 speed: 300,
                 spaceBetween: 0,
                 // 回调函数
@@ -75,7 +75,7 @@
                 onImagesReady(swiper) {
                     console.log(swiper);
                     fullScreen(".full-screen");
-                    swiper.slideNext();
+                    // swiper.slideNext();
                 }
             });
         }
@@ -116,10 +116,17 @@
     .single-page {
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, .5);
+        background: rgb(0, 0, 0);
     }
-    .full-screen {
-        position: relative;
+    .scale-screen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .full-width {
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;

@@ -1,0 +1,96 @@
+.rotating {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+	-webkit-animation-name: rotating;
+	animation-name: rotating;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes rotating {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes rotating {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.alternate-flash {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+	-webkit-animation-name: alternate-flash;
+	animation-name: alternate-flash;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes alternate-flash {
+	0% {
+		opacity: 0.1;
+	}
+    50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.1;
+	}
+}
+@keyframes alternate-flash {
+    0% {
+		opacity: 0.1;
+	}
+    50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.1;
+	}
+}
+.floating {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+	-webkit-animation-name: floating;
+	animation-name: floating;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes floating {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+    50% {
+		transform: translate3d(0, -10px, 0);
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+@keyframes floating {
+    0% {
+		transform: translate3d(0, 0, 0);
+	}
+    50% {
+		transform: translate3d(0, -10px, 0); 
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}

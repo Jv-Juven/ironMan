@@ -1,10 +1,19 @@
 <template>
     <div class="swiper-slide swiper-no-swiping single-page">
-        <input type="text" name="name" value="" v-model="username" placeholder="姓名">
-        <input type="password" name="name" value="" v-model="phone" placeholder="手机号码">
-        <button type="button" name="button" @click="submitInfo">
-            提交
-        </button>
+        <img class="scale-screen" src="../../static/images/page7/result_bg.jpg" alt="">
+        <img class="full-width" src="../../static/images/page7/inputs.png" alt="">
+        <img class="lottery-words" src="../../static/images/page7/beibao.png" alt="" v-if="false">
+        <!-- <img class="lottery-words" src="../../static/images/page7/tongxingzheng_words.png" alt="" v-if="true"> -->
+        <!-- <img class="lottery-words no-lottery-words" src="../../static/images/page7/no_award_words.png" alt="" v-if="true"> -->
+        <!-- <img class="lottery-words no-lottery-words" src="../../static/images/page7/already_lottery_words.png" alt="" v-if="true"> -->
+        <input class="input username" type="text" name="name" value="" v-model="username" placeholder="姓名">
+        <input class="input phone" type="text" name="name" value="" v-model="phone" placeholder="手机号码">
+
+        <!-- <img class="botton submit-btn" src="../../static/images/page7/submit_btn.png" @click="submitInfo"> -->
+        <!-- <img class="botton share-btn" src="../../static/images/page7/share_btn.png" @click="share"> -->
+
+        <img class="botton submit-btn no-award" src="../../static/images/page7/share_btn.png" @click="share">
+        <img class="botton share-btn no-award" src="../../static/images/page7/restart_btn.png" @click="restart">
     </div>
 </template>
 <script type="text/javascript">
@@ -64,6 +73,12 @@
                         console.log("提交数据成功", res);
                     }
                 });
+            },
+            // 分享
+            share() {},
+            // 重新开始
+            restart() {
+                location.reload();
             }
         },
         ready() {
@@ -99,6 +114,63 @@
         }
     }
 </script>
-<style lang="less" media="screen">
+<style lang="less" media="screen" scoped>
     @import "~swiper/src/less/swiper.less";
+
+    @btn_w: 220px;
+    .lottery-words {
+        position: absolute;
+        top: 130px;
+        left: 0;
+
+        width: 100%;
+    }
+    .no-lottery-words {
+        top: 200px;
+    }
+    .input {
+        @w: 380px;
+        position: absolute;
+        left: 50%;
+
+        color: white;
+        font-size: 36px; /*px*/
+
+        width: @w;
+        margin: 0 -@w/2;
+        line-height: 64px;
+        background: transparent;
+        // background: rgba(255, 255, 255, .3);
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+    .input.phone {
+        top: 594px;
+    }
+    .input.username {
+        top: 512px;
+    }
+    .botton {
+        position: absolute;
+        top: 800px;
+
+        width: @btn_w;
+    }
+    .botton.submit-btn {
+        left: 50%;
+        margin-left: -(@btn_w + 40);
+    }
+    .botton.share-btn {
+        right: 50%;
+        margin-right: -(@btn_w + 40);
+    }
+    .botton.no-award {
+        top: 760px;
+    }
+    .botton.no-award {
+        top: 640px;
+    }
 </style>

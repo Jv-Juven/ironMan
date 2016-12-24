@@ -54,4 +54,5 @@ body {
 	height: 100%;
 }
 @import "assets/css/animate.css";
+@import "assets/css/animations.css";
 </style>
