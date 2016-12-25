@@ -1,7 +1,7 @@
 <template>
     <div class="swiper-slide swiper-no-swiping single-page">
         <img class="full-screen" src="../../static/images/loading/loading_bg.jpg" alt="" />
-        <img class="full-screen animated infinite flash" src="../../static/images/loading/flashing.png" alt="" />
+        <!-- <img class="full-screen animated infinite flash" src="../../static/images/loading/flashing.png" alt="" /> -->
         <!-- <video src="videofile.ogg" autoplay poster="posterimage.jpg"> -->
 
         </video>
