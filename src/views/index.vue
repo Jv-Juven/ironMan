@@ -20,6 +20,7 @@
 </template>
 <script type="text/javascript">
     import Swiper from "swiper";
+    import "jquery.transit";
     import util from "util/pages";
     import * as getters from 'data/getters';
     import Loading from "components/loading";

@@ -110,7 +110,7 @@
                     console.log(`恭喜你，获得${lotteryResult.award.award}`);
                     return;
                 }
-            })
+            });
         }
     }
 </script>
