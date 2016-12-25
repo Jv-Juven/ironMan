@@ -16,7 +16,7 @@
         created() {},
         ready() {
             // 页面函数队列
-            this.pushFuncs(() => {});
+            // this.pushFuncs(() => {});
 
         }
     }

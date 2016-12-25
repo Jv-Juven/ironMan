@@ -1,4 +1,5 @@
 <template>
+    <loading id="loading" class="full-screen loading"></loading>
     <!-- Swiper 的窗口  -->
     <div class="swiper-container swiper-body">
         <!-- Swiper 的容器 -->
@@ -7,7 +8,6 @@
             <!-- <div class="swiper-slide single-page">1</div>
             <div class="swiper-slide single-page">2</div>
             <div class="swiper-slide single-page">3</div> -->
-            <loading></loading>
             <page1></page1>
             <page2></page2>
             <page3></page3>
@@ -17,6 +17,7 @@
             <page7></page7>
         </div>
     </div>
+
 </template>
 <script type="text/javascript">
     import Swiper from "swiper";
@@ -54,13 +55,15 @@
             let _this = this;
             // 计算当前所有页面的总数
             console.log("getters:", this.pageCallFuncs);
+
+            fullScreen(".full-screen");
             // 初始化Swiper
             this.bodySwiper = new Swiper(".swiper-body", {
                 // Optional parameters
                 direction: 'vertical',
-                noSwiping: false,
+                noSwiping: true,
                 loop: false,
-                initialSlide: 6,
+                initialSlide: 5,
                 speed: 300,
                 spaceBetween: 0,
                 // 回调函数
@@ -75,8 +78,8 @@
                 },
                 onImagesReady(swiper) {
                     console.log(swiper);
-                    fullScreen(".full-screen");
                     // swiper.slideNext();
+                    $('#loading').fadeOut();
                 }
             });
         }
@@ -131,5 +134,8 @@
         top: 0;
         left: 0;
         width: 100%;
+    }
+    .loading {
+        z-index: 999;
     }
 </style>
