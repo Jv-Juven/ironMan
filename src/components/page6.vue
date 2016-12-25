@@ -11,6 +11,14 @@
         <img class="plate-combo full-width alternate-flash point-flash-a" src="../../static/images/page6/points_deep.png" alt="">
         <img class="plate-combo full-width alternate-flash point-flash-b" src="../../static/images/page6/points_shallow.png" alt="">
         <img class="turn-plate turn-plate-c" src="../../static/images/page6/turnplate.png" alt="">
+
+        <img class="turn-plate turn-plate-section turn-plate-section-c turn-plate-c" src="../../static/images/page6/turnplate_section01.png" alt="">
+        <img class="turn-plate turn-plate-section turn-plate-section-c turn-plate-c" src="../../static/images/page6/turnplate_section02.png" alt="">
+        <img class="turn-plate turn-plate-section turn-plate-section-c turn-plate-c" src="../../static/images/page6/turnplate_section03.png" alt="">
+        <img class="turn-plate turn-plate-section turn-plate-section-c turn-plate-c" src="../../static/images/page6/turnplate_section04.png" alt="">
+        <img class="turn-plate turn-plate-section turn-plate-section-c turn-plate-c" src="../../static/images/page6/turnplate_section05.png" alt="">
+        <img class="turn-plate turn-plate-section turn-plate-section-c turn-plate-c" src="../../static/images/page6/turnplate_section06.png" alt="">
+
         <img class="plate-combo full-width" src="../../static/images/page6/pointer.png" alt="">
         <!-- 字，标语 -->
         <img class="slogan slogan-c" src="../../static/images/page6/lottery_slogan.png" alt="">
@@ -57,15 +65,20 @@
             },
             // 抽奖结果展示
             showLotteryResult() {
-                this.container.slideNext();
+                let index = Math.floor(this.resultRegs/60);
+                let results = $(".turn-plate-section-c");
+                let length = results.length;
+                results.eq(length - index).show().addClass("animated flash");
                 if (this.result.status === 1) {
                     console.log("未中奖");
-                    return;
+                    // return;
                 }
                 if (this.result.status === 2) {
                     console.log(`恭喜你中奖了！奖品为${this.result.award.award}`);
-                    return;
+                    // return;
                 }
+                // 跳转至下一页
+                setTimeout(() => { this.container.slideNext(); }, 2000);
             }
         },
         methods: {
@@ -81,9 +94,10 @@
                 // 随机角度
                 let indexArr = [120, 240];
                 let index = Math.floor(Math.random() * 2);
+                let index01 = Math.floor(Math.random() * 3);
                 // 未中奖
                 if (result.status === 1) {
-                    regs = [60, 180, 300][Math.floor(Math.random() * 3)];
+                    regs = [60, 180, 300][index01];
                 }
                 if (result.status === 2) {
                     // 通行证
@@ -105,7 +119,7 @@
                 $(".slogan-c").show()
                     .addClass("animated bounceInDown");
                 setTimeout(() => { $(".slogan-c").removeClass("animated bounceInDown").addClass("floating"); }, 1200);
-            })
+            });
 
             // 抽奖 旋转
             $("#block").on("click", function () {
@@ -133,10 +147,8 @@
                             });
 
                             if (isEnding) {
-                                // 显示抽奖结果
+                                // 显示抽奖结果及跳转
                                 thisVm.$emit("showLotteryResult");
-                                //跳转下一页
-                                setTimeout(() => { thisVm.container.slideNext(); }, 2000);
                             }
 
                         });
@@ -167,16 +179,19 @@
     @combo_top: 40px;
 
     .turn-plate {
-        @w: 470px;
+        @w: 540px;
         position: absolute;
-        top: 142px + @combo_top;
+        top: 106px + @combo_top;
         left: 50%;
 
         width: @w;
         height: @w;
-        margin: 0 -@w/2;
+        margin: 0 -@w/2 - 2;
 
         -webkit-tap-highlight-color:rgba(0,0,0,0);
+    }
+    .turn-plate-section {
+        display: none;
     }
     .slogan {
         position: absolute;
