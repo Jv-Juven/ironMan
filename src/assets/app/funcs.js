@@ -9,10 +9,10 @@ export const validate = (params) => {
         };
     }
     if (!/1[3|5|7|8]\d{9}/.test(params.phone)) {
-        console.warn("请填写手机号码");
+        console.warn("请填写合法的手机号码");
         return {
             status: false,
-            msg: "请填写手机号码"
+            msg: "请填写合法的手机号码"
         };
     }
     return {

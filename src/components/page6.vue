@@ -68,7 +68,9 @@
                 let index = Math.floor(this.resultRegs/60);
                 let results = $(".turn-plate-section-c");
                 let length = results.length;
-                results.eq(length - index).show().addClass("animated flash");
+                console.warn("length", length, "index", index);
+                let showIndex = (length - index)%length;
+                results.eq(showIndex).show().addClass("animated flash");
                 if (this.result.status === 1) {
                     console.log("未中奖");
                     // return;
@@ -77,8 +79,6 @@
                     console.log(`恭喜你中奖了！奖品为${this.result.award.award}`);
                     // return;
                 }
-                // 跳转至下一页
-                setTimeout(() => { this.container.slideNext(); }, 2000);
             }
         },
         methods: {
@@ -128,6 +128,8 @@
                 if (!!token && token.length > 0) {
                     console.log("对不起，您已抽过奖。");
                     thisVm.setIsFirst(false);
+                    // 跳转至下一页
+                    setTimeout(() => { thisVm.container.slideNext(); }, 0);
                     return;
                 }
                 // 抽奖
@@ -149,6 +151,8 @@
                             if (isEnding) {
                                 // 显示抽奖结果及跳转
                                 thisVm.$emit("showLotteryResult");
+                                // 跳转至下一页
+                                setTimeout(() => { thisVm.container.slideNext(); }, 2000);
                             }
 
                         });
