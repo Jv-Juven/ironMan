@@ -19,7 +19,8 @@
         <img class="display-none botton submit-btn no-award no-award-c" src="../../static/images/page7/share_btn.png" @click="share">
         <img class="display-none botton share-btn no-award no-award-c" src="../../static/images/page7/restart_btn.png" @click="restart">
         <!-- 分享提示 -->
-        <img class="display-none full-screen share-tips share-tips-c" src="../../static/images/page7/share_tips.png" alt="">
+        <div class="display-none scale-screen share-bg share-tips-c"></div>
+        <img class="display-none scale-screen share-tips share-tips-c" src="../../static/images/page7/share_tips.png" alt="">
         <!-- 提示框 -->
         <alert
             :err-data.sync="errData"
@@ -134,13 +135,13 @@
                 let status = utils.getCookie("ironMan_status");
                 let token = utils.getCookie("ironMan_token");
                 console.log("thisVm.result", thisVm.result);
-                container.noSwiping = false;
+                container.noSwiping = true;
                 console.log("007");
                 // 判断是否第一次抽奖
                 if (!thisVm.isFirst && token) {
                     console.log("您已抽过奖");
                     setTimeout(() => {
-                        $(".no-lottery-words").eq(1).show().addClass("animated flipInX");
+                        $(".no-lottery-words").eq(1).show().addClass("animated bounceIn");
                     }, 600);
                     setTimeout(() => { $(".no-award-c").show().addClass("animated fadeInDown"); }, 200);
                     return;
@@ -149,7 +150,7 @@
                 if (lotteryResult.status == 1) {
                     console.log("很遗憾，您没抽中奖");
                     setTimeout(() => {
-                        $(".no-lottery-words").eq(0).show().addClass("animated flipInX");
+                        $(".no-lottery-words").eq(0).show().addClass("animated bounceIn");
                     }, 600);
                     setTimeout(() => { $(".no-award-c").show().addClass("animated fadeInDown"); }, 200);
                     return;
@@ -158,7 +159,7 @@
                 if (lotteryResult.award.awardType == 1) {
                     console.log(`恭喜你，获得${lotteryResult.award.award}`);
                     setTimeout(() => {
-                        $(".award-type-1").show().addClass("animated flipInX");
+                        $(".award-type-1").show().addClass("animated bounceIn");
                     }, 600);
                     setTimeout(() => { $(".is-award-c").show().addClass("animated fadeInDown"); }, 200);
                     setTimeout(() => { $(".input-c").show().addClass("animated fadeIn");; }, 200);
@@ -168,7 +169,7 @@
                 if (lotteryResult.award.awardType == 2) {
                     console.log(`恭喜你，获得${lotteryResult.award.award}`);
                     setTimeout(() => {
-                        $(".award-type-2").show().addClass("animated flipInX");
+                        $(".award-type-2").show().addClass("animated bounceIn");
                     }, 600);
                     setTimeout(() => { $(".is-award-c").show().addClass("animated fadeInDown"); }, 200);
                     setTimeout(() => { $(".input-c").show().addClass("animated fadeIn");; }, 200);
@@ -238,6 +239,9 @@
         top: 640px;
     }
 
+    .share-bg {
+        background: rgba(0, 0, 0, .6);
+    }
     .share-tips {}
 
     .display-none {
