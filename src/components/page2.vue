@@ -1,5 +1,13 @@
 <template>
-    <div class="swiper-slide single-page">0002</div>
+    <div class="swiper-slide single-page">
+        
+        <img class="scale-screen" src="../../static/images/page2/P2.png" alt=""></img>
+        <img class="title1" src="../../static/images/page2/title1.png" alt=""></img>
+        <img class="title2" src="../../static/images/page2/title2.png" alt=""></img>
+        <img class="title21" src="../../static/images/page2/title21.png" alt=""></img>
+        <img class="title22" src="../../static/images/page2/title22.png" alt=""></img>
+        <img class="title23" src="../../static/images/page2/title23.png" alt=""></img>
+    </div>
 </template>
 <script type="text/javascript">
     import * as actions from 'data/actions'
@@ -11,10 +19,48 @@
             // 页面函数队列
             this.pushFuncs(() => {
                 console.log("002");
+                /*$(".title21").addClass("animated flash zy-count");*/
             });
         }
     }
 </script>
 <style lang="less" media="screen">
     @import "~swiper/src/less/swiper.less";
+</style>
+<style lang="less" scoped>
+    .title1{
+        width: 462px;
+        position: absolute;
+        z-index: 1;
+        top: 196px;
+        left: 125px;
+    }
+    .title2{
+        width: 352px;
+        position: absolute;
+        z-index: 3;
+        top: 488px;
+        left: 200px;
+    }
+    .title21{
+        width: 685px;
+        position: absolute;
+        z-index: 1;
+        top: 579px;
+        left: 40px;
+    }
+    .title22{
+        width: 596px;
+        position: absolute;
+        z-index: 1;
+        top: 490px;
+        left: 80px;
+    }
+    .title23{
+        width: 575px;
+        position: absolute;
+        z-index: 1;
+        top: 344px;
+        left: 88px;
+    }
 </style>
