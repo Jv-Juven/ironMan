@@ -1,4 +1,9 @@
 <template>
+    <audio id="music" autoplay="true" loop="loop">
+		  <source src="http://myteamproject.oss-cn-beijing.aliyuncs.com/liwai/4-30/liwai_bgmusic.mp3" type="audio/mpeg">
+		  <!-- <source src="http://makerh5.com/web/liwai0501/data/voice/201505/01/mw56ap.mp3" type="audio/mpeg"/> -->
+		您的浏览器不支持 audio 元素。
+	</audio>
     <loading id="loading" class="full-screen loading"></loading>
     <!-- Swiper 的窗口  -->
     <div class="swiper-container swiper-body">
@@ -21,7 +26,8 @@
 </template>
 <script type="text/javascript">
     import Swiper from "swiper";
-    import "jquery.transit";
+    // import "swiper-animate";
+    // import "jquery.transit";
     import util from "util/pages";
     import * as getters from 'data/getters';
     import Loading from "components/loading";
@@ -113,6 +119,7 @@
 </script>
 <style lang="less" media="screen">
     @import "~swiper/src/less/swiper.less";
+    // @import "~swiper-animate/animate.min.css";
     .swiper-body {
         width: 100%;
         height: 100%;
