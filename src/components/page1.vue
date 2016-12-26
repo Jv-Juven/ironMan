@@ -48,7 +48,7 @@
         text-align: center;
         // top: 224px;
         left: 149px;
-        margin-top: -120px;
+        margin-top: -160px;
     }
     .who .title{
         margin-top: 7%;
