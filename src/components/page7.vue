@@ -1,6 +1,11 @@
 <template>
     <div class="swiper-slide swiper-no-swiping single-page">
         <img class="scale-screen" src="../../static/images/page7/result_bg.jpg" alt="">
+        <!-- 流星 -->
+        <div class="star"></div>
+        <div class="star star2"></div>
+        <div class="star star3"></div>
+        <div class="star star4"></div>
         <!-- 中奖 -->
         <img class="display-none full-width input-c" src="../../static/images/page7/inputs.png" alt="">
         <!-- 中奖提示 -->
