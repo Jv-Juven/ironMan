@@ -151,7 +151,7 @@
     .arrow-up {
         @w: 60px;
         position: absolute;
-        bottom: 60px;
+        bottom: 80px;
         left: 50%;
 
         width: @w;
