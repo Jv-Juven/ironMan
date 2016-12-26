@@ -83,6 +83,12 @@
         animation-delay: 1s;
         -webkit-animation-delay: 1s;
     }
+
+</style>
+<style lang="less">
+    .zy-count{
+        animation-iteration-count:infinite;
+    }
     .star {
         display: block;
         width: 4px;
@@ -94,21 +100,25 @@
         position: absolute;
         box-shadow: 0 0 5px 5px rgba(255, 255, 255, .3);/* //光晕部分   */
         animation: star-ani 1.5s infinite;
+        -webkit-animation: star-ani 1.5s infinite;
     }
     .star2{
-    top: 150px;
+        top: 150px;
         left: 750px;
         animation: star-ani 1.5s 1s infinite;
+        -webkit-animation: star-ani 1.5s 1s infinite;
     }
     .star3{
         top: 150px;
         left: 600px;
         animation: star-ani 1.5s 1.5s infinite;
+        -webkit-animation: star-ani 1.5s 1.5s infinite;
     }
     .star4{
         top: 100px;
         left: 500px;
         animation: star-ani 1.5s 2s infinite;
+        -webkit-animation: star-ani 1.5s 2s infinite;
     }
     .star:after {
         content: '';
@@ -119,7 +129,9 @@
         border-width: 2px 300px 2px 300px;
         border-color: transparent transparent transparent rgba(255, 255, 255, .3);
         transform: rotate(-45deg) translate3d(1px, 1px, 0);
+        -webkit-transform: rotate(-45deg) translate3d(1px, 1px, 0);
         transform-origin: 0% 0%;
+        -webkit-transform-origin: 0% 0%;
     }
 
     @keyframes star-ani {
@@ -149,10 +161,5 @@
             opacity: 0;
             -webkit-transform: scale(1) rotate(0) translate3d(-400px, 400px, 0);
         }
-    }
-</style>
-<style lang="less">
-    .zy-count{
-        animation-iteration-count:infinite;
     }
 </style>
