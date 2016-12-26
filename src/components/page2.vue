@@ -1,6 +1,6 @@
 <template>
     <div class="swiper-slide single-page">
-        
+
         <img class="scale-screen" src="../../static/images/page2/P2.jpg" alt=""></img>
         <img class="title1" src="../../static/images/page2/title1.png" alt=""></img>
         <img class="title2" src="../../static/images/page2/title2.png" alt=""></img>
@@ -60,7 +60,8 @@
         z-index: 1;
         top: 490px;
         left: 80px;
-         animation: star 1.5s infinite;
+        animation: star 1.5s infinite;
+        -webkit-animation: star 1.5s infinite;
     }
     .title23{
         width: 575px;
@@ -69,18 +70,32 @@
         top: 344px;
         left: 88px;
     }
-    @keyframes star {  
-    0% {  
-        opacity: 0;  
-        transform: scale(0) rotate(0) translate3d(0, 0, 0);  
-    }  
-    50% {  
-        opacity: 1;  
-        transform: scale(1) rotate(0) translate3d(-5px, 0, 0);  
-    }  
-    100% {  
-        opacity: 0;  
-        transform: scale(1) rotate(0) translate3d(0, 0, 0);  
-    }  
-}  
+    @keyframes star {
+        0% {
+            opacity: 0;
+            transform: scale(0) rotate(0) translate3d(0, 0, 0);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1) rotate(0) translate3d(-5px, 0, 0);
+        }
+        100% {
+            opacity: 0;
+            transform: scale(1) rotate(0) translate3d(0, 0, 0);
+        }
+    }
+    @-webkit-keyframes star {
+        0% {
+            opacity: 0;
+            -webkit-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+        }
+        50% {
+            opacity: 1;
+            -webkit-transform: scale(1) rotate(0) translate3d(-5px, 0, 0);
+        }
+        100% {
+            opacity: 0;
+            -webkit-transform: scale(1) rotate(0) translate3d(0, 0, 0);
+        }
+    }
 </style>

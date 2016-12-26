@@ -22,9 +22,9 @@
             this.pushFuncs((container, swiper, _this) => {
                 container.noSwiping = true;
                 console.log("004");
-                $(".p41").show().addClass("animated bounceInRight");
+                $(".p41").show().addClass("animated bounceIn");
                 $(".p46").show().addClass("animated rotateIn");
-                
+
             })
         }
     }
@@ -77,7 +77,7 @@
         z-index: 3;
         display: none;
     }
-    
+
     .zy-rotate{
         -webkit-animation-duration: 5s;
         animation-duration: 5s;
