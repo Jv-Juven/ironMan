@@ -30,11 +30,11 @@
                 if (this.isMusicOpen) {
                     // 音乐播放
                     this.music.play();
-                    console.log(this.isMusicOpen);
+                    // console.log(this.isMusicOpen);
                 } else {
                     // 音乐停止
                     this.music.pause();
-                    console.log(this.isMusicOpen);
+                    // console.log(this.isMusicOpen);
                 }
             }
         },

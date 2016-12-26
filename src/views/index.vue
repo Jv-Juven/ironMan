@@ -67,7 +67,7 @@
                 direction: 'vertical',
                 noSwiping: true,
                 loop: false,
-                initialSlide: 5,
+                initialSlide: 0,
                 speed: 300,
                 spaceBetween: 0,
                 // 回调函数
