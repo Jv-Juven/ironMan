@@ -1,9 +1,4 @@
 <template>
-    <audio id="music" autoplay="true" loop="loop">
-		  <source src="http://oiq5sba05.bkt.clouddn.com/WechatIMG104.jpeg" type="audio/mpeg">
-		  <!-- <source src="http://makerh5.com/web/liwai0501/data/voice/201505/01/mw56ap.mp3" type="audio/mpeg"/> -->
-		您的浏览器不支持 audio 元素。
-	</audio>
     <loading id="loading" class="full-screen loading"></loading>
     <!-- Swiper 的窗口  -->
     <div class="swiper-container swiper-body">
@@ -22,6 +17,7 @@
             <page7></page7>
         </div>
     </div>
+    <music></music>
 
 </template>
 <script type="text/javascript">
@@ -31,6 +27,7 @@
     import util from "util/pages";
     import * as getters from 'data/getters';
     import Loading from "components/loading";
+    import Music from "components/music";
     import Page1 from "components/page1";
     import Page2 from "components/page2";
     import Page3 from "components/page3";
@@ -49,6 +46,7 @@
         },
         components: {
             Loading,
+            Music,
             Page1,
             Page2,
             Page3,
@@ -149,4 +147,5 @@
     .display-none {
         display: none;
     }
+
 </style>
