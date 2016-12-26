@@ -27,7 +27,7 @@
             this.pushFuncs((container,swiper,_this) => {
                 console.log("001");
                 // $(".heros").addClass("animated slideInRight");
-                setTimeout(() => { $(".who").show().addClass("animated bounceIn"); }, 600);
+                setTimeout(() => { $(".who").show().addClass("animated bounceIn"); }, 800);
                 //$(".lighting").addClass("animated fadeIn zy-count");
             });
 
@@ -41,13 +41,14 @@
     .who{
         width: 432px;
         height: 177px;
-        top: 540px;
+        top: 50%;
         border:18px solid #1a1a1a;
         background: #034760;
         position: absolute;
         text-align: center;
         // top: 224px;
         left: 149px;
+        margin-top: -120px;
     }
     .who .title{
         margin-top: 7%;
@@ -81,59 +82,59 @@
         animation-delay: 1s;
         -webkit-animation-delay: 1s;
     }
-    .star {  
-    display: block;  
-    width: 4px;  
-    height: 4px;  
+    .star {
+    display: block;
+    width: 4px;
+    height: 4px;
     border-radius: 50%;/* //小圆点   */
-    background: #FFF;  
-    top: 100px;  
-    left: 400px;  
-    position: absolute;  
+    background: #FFF;
+    top: 100px;
+    left: 400px;
+    position: absolute;
     box-shadow: 0 0 5px 5px rgba(255, 255, 255, .3);/* //光晕部分   */
     animation: star-ani 1.5s infinite;
-}  
+}
 .star2{
-top: 150px;  
-    left: 750px;  
+top: 150px;
+    left: 750px;
     animation: star-ani 1.5s 1s infinite;
 }
 .star3{
-    top: 150px;  
-    left: 600px;  
+    top: 150px;
+    left: 600px;
     animation: star-ani 1.5s 1.5s infinite;
 }
 .star4{
-    top: 100px;  
-    left: 500px;  
+    top: 100px;
+    left: 500px;
     animation: star-ani 1.5s 2s infinite;
 }
-.star:after {  
-    content: '';  
-    display: block;  
-    top: 0px;  
-    left: 4px;  
-    border: 0px solid #fff;  
-    border-width: 2px 300px 2px 300px;  
-    border-color: transparent transparent transparent rgba(255, 255, 255, .3);  
-    transform: rotate(-45deg) translate3d(1px, 1px, 0);  
-    transform-origin: 0% 0%;  
-}  
+.star:after {
+    content: '';
+    display: block;
+    top: 0px;
+    left: 4px;
+    border: 0px solid #fff;
+    border-width: 2px 300px 2px 300px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, .3);
+    transform: rotate(-45deg) translate3d(1px, 1px, 0);
+    transform-origin: 0% 0%;
+}
 
-@keyframes star-ani {  
-    0% {  
-        opacity: 0;  
-        transform: scale(0) rotate(0) translate3d(0, 0, 0);  
-    }  
-    50% {  
-        opacity: 1;  
-        transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);  
-    }  
-    100% {  
-        opacity: 0;  
-        transform: scale(1) rotate(0) translate3d(-400px, 400px, 0);  
-    }  
-}  
+@keyframes star-ani {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(0) translate3d(0, 0, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1) rotate(0) translate3d(-400px, 400px, 0);
+    }
+}
 </style>
 <style lang="less">
     .zy-count{
