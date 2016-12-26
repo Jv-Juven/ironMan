@@ -145,4 +145,8 @@
     .loading {
         z-index: 999;
     }
+
+    .display-none {
+        display: none;
+    }
 </style>

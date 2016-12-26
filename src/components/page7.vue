@@ -243,8 +243,4 @@
         background: rgba(0, 0, 0, .6);
     }
     .share-tips {}
-
-    .display-none {
-        display: none;
-    }
 </style>

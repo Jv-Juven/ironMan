@@ -1,8 +1,8 @@
 <template>
-    <div class="swiper-slide single-page"> 
-        <img class="scale-screen heros" src="../../static/images/page1/heros.png" alt=""></img>
+    <div class="swiper-slide single-page">
+        <!-- <img class="scale-screen heros" src="../../static/images/page1/heros.png" alt=""></img> -->
         <img class="scale-screen" src="../../static/images/page1/P1.png" alt=""></img>
-        <div class="who">
+        <div class="who display-none">
             <img class="title" src="../../static/images/page1/who.png" width="90%" alt="">
             <div class="title-border-1 alternate-flash"></div>
             <div class="title-border-2 alternate-flash"></div>
@@ -22,7 +22,8 @@
             // 页面函数队列
             this.pushFuncs((container,swiper,_this) => {
                 console.log("001");
-                $(".heros").addClass("animated slideInRight");
+                // $(".heros").addClass("animated slideInRight");
+                setTimeout(() => { $(".who").show().addClass("animated bounceIn"); }, 600);
                 $(".lighting").addClass("animated fadeIn zy-count");
             });
 
@@ -36,11 +37,12 @@
     .who{
         width: 432px;
         height: 177px;
+        top: 540px;
         border:18px solid #1a1a1a;
         background: #034760;
         position: absolute;
         text-align: center;
-        top: 224px;
+        // top: 224px;
         left: 149px;
     }
     .who .title{
