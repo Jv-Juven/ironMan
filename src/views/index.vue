@@ -67,7 +67,7 @@
                 direction: 'vertical',
                 noSwiping: true,
                 loop: false,
-                initialSlide: 0,
+                initialSlide: 5,
                 speed: 300,
                 spaceBetween: 0,
                 // 回调函数
@@ -146,6 +146,16 @@
 
     .display-none {
         display: none;
+    }
+
+    .arrow-up {
+        @w: 60px;
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+
+        width: @w;
+        margin: 0 -@w/2;
     }
 
 </style>
