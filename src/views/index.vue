@@ -1,6 +1,6 @@
 <template>
     <audio id="music" autoplay="true" loop="loop">
-		  <source src="http://myteamproject.oss-cn-beijing.aliyuncs.com/liwai/4-30/liwai_bgmusic.mp3" type="audio/mpeg">
+		  <source src="http://oiq5sba05.bkt.clouddn.com/Future%20World%20Music%20-%20Dream%20Chasers%20%28online-audio-converter.com%29.mp3" type="audio/mpeg">
 		  <!-- <source src="http://makerh5.com/web/liwai0501/data/voice/201505/01/mw56ap.mp3" type="audio/mpeg"/> -->
 		您的浏览器不支持 audio 元素。
 	</audio>

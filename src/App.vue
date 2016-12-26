@@ -15,9 +15,9 @@
 			// 微信头设置
 			setwx({
 			 	debug: false,
-			 	title: "谁是你心中真正的超级英雄? or 边个係你心目中嘅Hero?",
+			 	title: "边个係你心目中嘅Hero?",
 			 	desc: "“铁”粉大召集，神秘人物带你酷炫飞越香港上空!",
-			 	imgurl: "http://myteamproject.oss-cn-beijing.aliyuncs.com/hxjj/7-14/06.jpg",
+			 	imgurl: "http://oiq5sba05.bkt.clouddn.com/weixin_pic.jpg",
 			});
 		}
 	}
