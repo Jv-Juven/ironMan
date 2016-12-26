@@ -27,7 +27,7 @@
             <span class="unselect"></span>
             <img class="item item6" src="../../static/images/page3/item6.png" alt=""></img>
         </div>
-        <img class="p47 floating" src="../../static/images/page4/7.png" alt=""></img>
+        <img class="p47 display-none" src="../../static/images/page4/7.png" alt=""></img>
     </div>
 </template>
 <script type="text/javascript">
@@ -44,18 +44,17 @@
                 container.noSwiping = true;
                 $(".hero").show().addClass("animated slideInRight");
                 $(".title").show().addClass("animated fadeIn");
-                $(".item-box").show().addClass("animated bounceInDown");        
+                $(".item-box").show().addClass("animated bounceInDown");
                 $(".item-box").on("click", function() {
                     $(this).find("span").toggleClass("select");
-                    
-                    
                 });
+                setTimeout(() => { $(".p47").show().addClass("animated bounceIn"); }, 1800);
                 $(".p47").on("click", function() {
-                   
+
                     setTimeout(function(){
                         swiper.slideNext();
                     }, 100)
-                    
+
                 });
             });
         }
