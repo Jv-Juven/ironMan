@@ -136,14 +136,14 @@
                 thisVm.$emit("lottery");
                 var _el = $(".turn-plate-c");
                 _el.unbind();
-                Tween(0, 5760, 4000, "Linear", function (value, isEnding) {
+                Tween(0, 2440, 2000, "Quart.easeIn", function (value, isEnding) {
                     _el.css({
                         "transform": "rotate(" + value + "deg)"
                     });
 
                     if (isEnding) {
                         console.log("thisVm.resultRegs", thisVm.resultRegs);
-                        Tween(0, 3600 + thisVm.resultRegs, 3000, "Quart.easeOut", function (value, isEnding) {
+                        Tween(0, 360 + thisVm.resultRegs, 2000, "Quart.easeOut", function (value, isEnding) {
                             _el.css({
                                 "transform": "rotate(" + value + "deg)"
                             });

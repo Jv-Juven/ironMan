@@ -17,7 +17,7 @@
 			 	debug: false,
 			 	title: "边个係你心目中嘅Hero?",
 			 	desc: "“铁”粉大召集，神秘人物带你酷炫飞越香港上空!",
-			 	imgurl: "http://oiq5sba05.bkt.clouddn.com/weixin_pic.jpg",
+			 	imgurl: "http://oiq5sba05.bkt.clouddn.com/WechatIMG104.jpeg",
 			});
 		}
 	}
