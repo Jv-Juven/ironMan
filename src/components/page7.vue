@@ -16,8 +16,8 @@
         <img class="display-none botton submit-btn is-award-c" src="../../static/images/page7/submit_btn.png" @click="submitInfo">
         <img class="display-none botton share-btn is-award-c" src="../../static/images/page7/share_btn.png" @click="share">
         <!-- 已参加或未中奖 -->
-        <img class="display-none botton submit-btn no-award no-award-c" src="../../static/images/page7/share_btn.png" @click="share">
-        <img class="display-none botton share-btn no-award no-award-c" src="../../static/images/page7/restart_btn.png" @click="restart">
+        <img class="display-none botton share-btn no-award no-award-c" src="../../static/images/page7/share_btn.png" @click="share">
+        <img class="display-none botton submit-btn no-award no-award-c" src="../../static/images/page7/restart_btn.png" @click="restart">
         <!-- 分享提示 -->
         <div class="display-none scale-screen share-bg share-tips-c"></div>
         <img class="display-none scale-screen share-tips share-tips-c" src="../../static/images/page7/share_tips.png" alt="">
