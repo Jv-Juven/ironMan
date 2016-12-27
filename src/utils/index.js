@@ -27,4 +27,38 @@ funcs.delCookie = (name) => {
 	}
 }
 
+// 图片加载进度
+funcs.imagesProcessLoad = (fn) => {
+	var imgs = document.getElementsByTagName("img");
+	var imgsLength = imgs.length;
+	var srcs = [];
+	var image = new Image();
+	var index = 0;
+	var isEnded = false;
+	var processValue = 0;
+	let loadImages = () => {
+		image.src = imgs[index].getAttribute("src");
+		// console.log("imgs[index]", imgs[index]);
+		image.onload = () => {
+			// console.log("已加载图片：", index);
+			index++;
+			processValue = Math.floor((index/imgsLength) * 100);
+			if (index < imgsLength) {
+				loadImages();
+			} else {
+				// console.log("完成加载");
+				isEnded = true;
+			}
+			typeof fn === "function" && fn(processValue, isEnded, index, imgsLength);
+		}
+	}
+
+	loadImages();
+	// for(let i = 0; i < imgsLength; i++) {
+	// 	let link = imgs[i].getAttribute("src");
+	// 	srcs.push(link);
+	// }
+	console.warn("imgs");
+}
+
 module.exports = funcs;

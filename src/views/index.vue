@@ -55,16 +55,21 @@
             Page6,
             Page7
         },
+        created() {
+            // utils.imagesProcessLoad();
+        },
         ready() {
             let _this = this;
             // 计算当前所有页面的总数
-            console.log("getters:", this.pageCallFuncs);
-
+            // console.log("getters:", this.pageCallFuncs);
             fullScreen(".full-screen");
+
             // 初始化Swiper
             this.bodySwiper = new Swiper(".swiper-body", {
                 // Optional parameters
                 direction: 'vertical',
+                updateOnImagesReady: true,
+                preloadImages: true,
                 noSwiping: true,
                 loop: false,
                 initialSlide: 0,
@@ -81,9 +86,7 @@
                     }
                 },
                 onImagesReady(swiper) {
-                    console.log(swiper);
-                    // swiper.slideNext();
-                    $('#loading').fadeOut();
+                    // $('#loading').fadeOut();
                 }
             });
         }
@@ -113,6 +116,15 @@
             margin: "-" + height/2 + "px -" + width/2 + "px"
         });
     }
+
+    $(() => {
+        // utils.imagesProcessLoad((processValue, isEnded, index, imgsLength) => {
+        //     console.info(processValue + "%");
+        //     if (isEnded) {
+        //         $('#loading').fadeOut();
+        //     }
+        // });
+    });
 
 </script>
 <style lang="less" media="screen">
