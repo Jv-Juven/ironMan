@@ -23,6 +23,7 @@
                 console.log("002");
                 $(".title1").show().addClass("animated rotateIn");
                 $(".title2").show().addClass("animated lightSpeedIn");
+                $(".title22").show().addClass("animated fadeIn zy-count");
             });
         }
     }
@@ -60,6 +61,7 @@
         z-index: 1;
         top: 490px;
         left: 80px;
+        display: none;
     }
     .title23{
         width: 575px;
