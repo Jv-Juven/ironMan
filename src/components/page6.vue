@@ -53,15 +53,32 @@
                 let thisVm = this;
                 let url = "http://makerh5.com:1227/lottery";
                 // let url = "http://localhost:1227/lottery";
-                $.get(url, (res) => {
-                    console.info(res);
-                    thisVm.setLotteryResult(res.result);
-                    thisVm.token = res.token;
-                    // 设置已抽奖token
-                    utils.setCookie("ironMan_token", res.token);
-                    utils.setCookie("ironMan_status", thisVm.result.status);
+                let csrfToken = "Super Hero";
+                // $.get(url, (res) => {
+                //     console.info(res);
+                //     thisVm.setLotteryResult(res.result);
+                //     thisVm.token = res.token;
+                //     // 设置已抽奖token
+                //     utils.setCookie("ironMan_token", res.token);
+                //     utils.setCookie("ironMan_status", thisVm.result.status);
+                // });
+                $.ajax({
+                    url: url,
+                    type: "GET",
+                    beforeSend(XHR) {
+                        console.log("XHR", XHR);
+                        XHR.setRequestHeader("csrf_token", csrfToken);
+                    },
+                    success(res) {
+                        console.info(res);
+                        thisVm.setLotteryResult(res.result);
+                        thisVm.token = res.token;
+                        // 设置已抽奖token
+                        utils.setCookie("ironMan_token", res.token);
+                        utils.setCookie("ironMan_status", thisVm.result.status);
+                    }
                 });
-                console.log("请求的链接：%c %s", "color: #eb5e18", url);
+                // console.log("请求的链接：%c %s", "color: #eb5e18", url);
             },
             // 抽奖结果展示
             showLotteryResult() {
