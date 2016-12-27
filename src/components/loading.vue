@@ -33,7 +33,7 @@
                 thisVm.value = processValue + "%";
                 thisVm.style = "width:" + processValue + "%";
                 if (isEnded) {
-                    // $('#loading').fadeOut();
+                    $('#loading').fadeOut();
                 }
             });
         }
