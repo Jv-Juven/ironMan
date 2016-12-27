@@ -29,7 +29,7 @@
             // 页面函数队列
             // this.pushFuncs(() => {});
             utils.imagesProcessLoad((processValue, isEnded, index, imgsLength) => {
-                console.info(processValue + "%");
+                // console.info(processValue + "%");
                 thisVm.value = processValue + "%";
                 thisVm.style = "width:" + processValue + "%";
                 if (isEnded) {
