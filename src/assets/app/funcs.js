@@ -8,7 +8,7 @@ export const validate = (params) => {
             msg: "请填写姓名"
         };
     }
-    if (!/1[3|5|7|8]\d{9}/.test(params.phone)) {
+    if (!/^1[34578]\d{9}$/.test(params.phone)) {
         console.warn("请填写合法的手机号码");
         return {
             status: false,

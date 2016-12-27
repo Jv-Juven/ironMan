@@ -86,7 +86,7 @@
                     }
                 },
                 onImagesReady(swiper) {
-                    // $('#loading').fadeOut();
+                    $('#loading').fadeOut();
                 }
             });
         }
