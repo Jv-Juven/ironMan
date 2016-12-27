@@ -12,7 +12,7 @@
     export default {
         data: function () {
             return {
-                music: new Audio("http://oiq5sba05.bkt.clouddn.com/X-Ray%20Dog%20-%20At%20First%20Glance.MP3"),
+                music: new Audio("http://oiq5sba05.bkt.clouddn.com/17.%20X-Ray%20Dog%20-%20At%20First%20Glance_Transcode.mp3"),
                 isMusicOpen: true
             }
         },
