@@ -7,8 +7,8 @@ module.exports = {
 		index: path.resolve(__dirname, '../dist/index.html'),
 		assetsRoot: path.resolve(__dirname, '../dist'),
 		assetsSubDirectory: 'static',
-		assetsPublicPath: './',
-		// assetsPublicPath: 'http://oiq5sba05.bkt.clouddn.com/ironMan/',
+		// assetsPublicPath: './',
+		assetsPublicPath: 'http://oiq5sba05.bkt.clouddn.com/ironMan/',
 		productionSourceMap: false, // 是否需要生产包的sourcemap，原本值为：true
 		// Gzip off by default as many popular static hosts such as
 		// Surge or Netlify already gzip all static assets for you.
