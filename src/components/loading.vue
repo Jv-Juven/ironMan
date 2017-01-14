@@ -1,9 +1,11 @@
 <template>
     <div class="swiper-slide swiper-no-swiping single-page">
         <img class="full-screen" src="../../static/images/loading/loading_bg.jpg" alt="" />
+        <img class="logo" src="../../static/images/loading/loading_logo.jpg" alt="">
         <!-- <img class="full-screen animated infinite flash" src="../../static/images/loading/flashing.png" alt="" /> -->
         <div class="process process-bg">
-            <div class="process-text">{{value}}</div>
+            <!-- <div class="process-text">{{value}}</div> -->
+            <div class="process-text">Loading...</div>
             <div class="process-run" :style="style"></div>
         </div>
     </div>
@@ -50,6 +52,15 @@
         font-size: dpr(16px);
         background: white;
     }
+    .logo {
+        @w: 720px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: @w;
+        margin: -280px -@w/2;
+    }
     .process {
         @w: 360px;
         @h: 2px;
@@ -68,7 +79,7 @@
     }
     .process-text {
         color: white;
-        margin-top: 20px;
+        margin-top: -40px;
     }
     .process-run {
         position: absolute;

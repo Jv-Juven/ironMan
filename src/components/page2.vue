@@ -1,5 +1,5 @@
 <template>
-    <div class="swiper-slide single-page">
+    <div class="swiper-slide swiper-no-swiping single-page" id="page2">
 
         <img class="scale-screen" src="../../static/images/page2/P2.jpg" alt=""></img>
         <img class="title1" src="../../static/images/page2/title1.png" alt=""></img>
@@ -9,10 +9,12 @@
         <img class="title23" src="../../static/images/page2/title23.png" alt=""></img>
         <img class="arrow-up floating" src="../../static/images/index/arrow.png" alt="">
 
+        <intro-cover></intro-cover>
     </div>
 </template>
 <script type="text/javascript">
-    import * as actions from 'data/actions'
+    import * as actions from 'data/actions';
+    import IntroCover from "./introCover";
     export default {
         vuex: {
             actions
@@ -25,6 +27,9 @@
                 $(".title2").show().addClass("animated lightSpeedIn");
                 $(".title22").show().addClass("animated fadeIn zy-count");
             });
+        },
+        components: {
+            IntroCover
         }
     }
 </script>
@@ -33,11 +38,14 @@
 </style>
 <style lang="less" scoped>
     .title1{
-        width: 462px;
+        @w: 660px;
+        width: @w;
         position: absolute;
         z-index: 1;
-        top: 196px;
-        left: 125px;
+        top: 170px;
+        left: 50%;
+
+        margin: 0 -@w/2;
         display: none;
     }
     .title2{

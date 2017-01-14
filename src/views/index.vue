@@ -12,7 +12,7 @@
             <page2></page2>
             <page3></page3>
             <page4></page4>
-            <page5></page5>
+            <!-- <page5></page5> -->
             <page6></page6>
             <page7></page7>
         </div>
@@ -32,7 +32,7 @@
     import Page2 from "components/page2";
     import Page3 from "components/page3";
     import Page4 from "components/page4";
-    import Page5 from "components/page5";
+    // import Page5 from "components/page5";
     import Page6 from "components/page6";
     import Page7 from "components/page7";
     export default {
@@ -51,7 +51,7 @@
             Page2,
             Page3,
             Page4,
-            Page5,
+            // Page5,
             Page6,
             Page7
         },
@@ -86,7 +86,7 @@
                     }
                 },
                 onImagesReady(swiper) {
-                    $('#loading').fadeOut();
+                    // $('#loading').fadeOut();
                 }
             });
         }

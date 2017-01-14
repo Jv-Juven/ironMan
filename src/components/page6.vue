@@ -202,12 +202,12 @@
     .turn-plate {
         @w: 540px;
         position: absolute;
-        top: 106px + @combo_top;
+        top: 106px + @combo_top + 2;
         left: 50%;
 
         width: @w;
         height: @w;
-        margin: 0 -@w/2 - 2;
+        margin: 0 -@w/2 - 4;
 
         -webkit-tap-highlight-color:rgba(0,0,0,0);
     }

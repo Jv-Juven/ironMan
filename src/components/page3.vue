@@ -2,7 +2,7 @@
     <div class="swiper-slide swiper-no-swiping single-page">
         <img class="scale-screen" src="../../static/images/page3/P3.jpg" alt=""></img>
         <img class="title" src="../../static/images/page3/title.png" alt=""></img>
-        <img class="hero" src="../../static/images/page3/hero.png" alt=""></img>
+        <!-- <img class="hero" src="../../static/images/page3/hero.png" alt=""></img> -->
         <div class="item-box item1-box">
             <span class="unselect"></span>
             <img class="item item1" src="../../static/images/page3/item1.png" alt=""></img>
@@ -42,7 +42,7 @@
             this.pushFuncs((container, swiper, _this) => {
                 console.log("003");
                 container.noSwiping = true;
-                $(".hero").show().addClass("animated slideInRight");
+                // $(".hero").show().addClass("animated slideInRight");
                 $(".title").show().addClass("animated fadeIn");
                 $(".item-box").show().addClass("animated bounceInDown");
                 $(".item-box").on("click", function() {
@@ -101,7 +101,7 @@
     }
     .item-box{
         position: absolute;
-        left: 222px;
+        left: 120px;
         width: 400px;
         min-height: 36px;
         display: none;
@@ -120,54 +120,62 @@
         -webkit-animation-delay: 0.4s;
     }
     .item4-box{
-        top: 590px;
+        top: 626px;
         animation-delay: 0.6s;
         -webkit-animation-delay: 0.6s;
     }
     .item5-box{
-        top: 648px;
+        top: 712px;
         animation-delay: 0.8s;
         -webkit-animation-delay: 0.8s;
     }
     .item6-box{
-        top: 706px;
+        top: 772px;
         animation-delay: 1s;
         -webkit-animation-delay: 1s;
     }
     .item{
         margin-left: 66px;
+        margin-top: 8px;
     }
+    @h: 26px;
     .item1{
-    width: 220px;
-    position: absolute;
-    z-index: 1;
-}
-.item2{
-    width: 195px;
-    position: absolute;
-    z-index: 1;
-}
-.item3{
-    width: 195px;
-    position: absolute;
-    z-index: 1;
-}
-.item4{
-    width: 194px;
-    position: absolute;
-    z-index: 1;
-}
-.item5{
-    width: 194px;
-    position: absolute;
-    z-index: 1;
-}
-.item6{
-    width: 193px;
-    position: absolute;
-    z-index: 1;
-}
-.p47{
+        // width: 400px;
+        height: @h;
+        position: absolute;
+        z-index: 1;
+    }
+    .item2{
+        // width: 195px;
+        height: @h;
+        position: absolute;
+        z-index: 1;
+    }
+    .item3{
+        // width: 195px;
+        height: @h * 2.4;
+        position: absolute;
+        z-index: 1;
+    }
+    .item4{
+        // width: 194px;
+        height: @h * 2.4;
+        position: absolute;
+        z-index: 1;
+    }
+    .item5{
+        // width: 194px;
+        height: @h;
+        position: absolute;
+        z-index: 1;
+    }
+    .item6{
+        // width: 193px;
+        height: @h;
+        position: absolute;
+        z-index: 1;
+    }
+    .p47{
         width: 104px;
         position: absolute;
         left: 320px;

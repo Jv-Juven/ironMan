@@ -19,13 +19,12 @@
         },
         ready() {
             // 页面函数队列
-            this.pushFuncs((container, swiper, _this) => {
-                container.noSwiping = true;
-                console.log("004");
-                $(".p41").show().addClass("animated bounceIn");
-                $(".p46").show().addClass("animated rotateIn");
-
-            })
+            // this.pushFuncs((container, swiper, _this) => {
+            //     container.noSwiping = true;
+            //     console.log("005");
+            //     $(".p41").show().addClass("animated bounceIn");
+            //     $(".p46").show().addClass("animated rotateIn");
+            // })
         }
     }
 </script>
