@@ -58,7 +58,6 @@ funcs.imagesProcessLoad = (fn) => {
 	// 	let link = imgs[i].getAttribute("src");
 	// 	srcs.push(link);
 	// }
-	console.warn("imgs");
 }
 
 module.exports = funcs;

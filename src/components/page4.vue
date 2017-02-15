@@ -1,9 +1,9 @@
 <template>
     <div class="swiper-slide single-page">
-       <img class="scale-screen" src="../../static/images/page5/P5.jpg" alt=""></img>
+       <img class="scale-screen" src="../../static/images/page3/P3.jpg" alt=""></img>
        <img class="herop5" src="../../static/images/page5/heros.png" alt=""></img>
        <img class="titlez4" src="../../static/images/page5/title.png" alt=""></img>
-       <img class="titlez2" src="../../static/images/page5/title2.png" alt=""></img> 
+       <img class="titlez2" src="../../static/images/page5/title2.png" alt=""></img>
 
         <img class="p51 alternate-flash" src="../../static/images/page5/p51.png" alt=""></img>
         <img class="p52 alternate-flash" src="../../static/images/page5/p52.png" alt=""></img>
@@ -30,7 +30,7 @@
                 $(".titlez4").show().addClass("animated bounceInDown");
                 $(".titlez2").show().addClass("animated jello");
                 console.log("005");
-                
+
             });
         },
         methods: {}
@@ -82,18 +82,18 @@
         opacity: 0.8;
         animation: herotra 1.5s infinite;
     }
-    @keyframes herotra {  
-    0% {  
-        opacity: 0.5;  
-        transform:  translate3d(0, 0, 0);  
-    }  
-    50% {  
-        opacity: 0.8;  
-        transform:  translate3d(-10px, 0, 0);  
-    }  
-    100% {  
-        opacity: 0.5;  
-        transform:  translate3d(0, 0, 0);  
-    }  
-}  
+    @keyframes herotra {
+    0% {
+        opacity: 0.5;
+        transform:  translate3d(0, 0, 0);
+    }
+    50% {
+        opacity: 0.8;
+        transform:  translate3d(-10px, 0, 0);
+    }
+    100% {
+        opacity: 0.5;
+        transform:  translate3d(0, 0, 0);
+    }
+}
 </style>

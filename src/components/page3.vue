@@ -64,14 +64,14 @@
     @import "~swiper/src/less/swiper.less";
 </style>
 <style lang="less" scoped>
-.title{
-    width: 380px;
-    position: absolute;
-    z-index: 1;
-    top: 194px;
-    left: 190px;
-    display: none;
-}
+    .title{
+        width: 380px;
+        position: absolute;
+        z-index: 1;
+        top: 194px;
+        left: 190px;
+        display: none;
+    }
     .hero{
         width: 320px;
         position: absolute;

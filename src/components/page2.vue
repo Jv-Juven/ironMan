@@ -34,7 +34,7 @@
     }
 </script>
 <style lang="less" media="screen">
-    @import "~swiper/src/less/swiper.less";
+    // @import "~swiper/src/less/swiper.less";
 </style>
 <style lang="less" scoped>
     .title1{

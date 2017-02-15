@@ -72,6 +72,7 @@
                 preloadImages: true,
                 noSwiping: true,
                 loop: false,
+                // freeMode: true,
                 initialSlide: 0,
                 speed: 300,
                 spaceBetween: 0,
@@ -86,7 +87,7 @@
                     }
                 },
                 onImagesReady(swiper) {
-                    // $('#loading').fadeOut();
+                    $('#loading').fadeOut();
                 }
             });
         }
@@ -127,8 +128,10 @@
     });
 
 </script>
+<style media="screen" scoped>
+    /*@import "~swiper/src/less/swiper.less";*/
+</style>
 <style lang="less" media="screen">
-    @import "~swiper/src/less/swiper.less";
     // @import "~swiper-animate/animate.min.css";
     .swiper-body {
         width: 100%;

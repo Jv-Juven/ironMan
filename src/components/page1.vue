@@ -2,6 +2,7 @@
     <div class="swiper-slide single-page">
         <!-- <img class="scale-screen heros" src="../../static/images/page1/heros.png" alt=""></img> -->
         <img class="scale-screen" src="../../static/images/page1/P1.jpg" alt=""></img>
+        <img class="scale-screen" src="../../static/images/page1/copyright.png" alt=""></img>
         <div class="who display-none">
             <img class="title" src="../../static/images/page1/who.png" width="90%" alt="">
             <div class="title-border-1 alternate-flash"></div>
