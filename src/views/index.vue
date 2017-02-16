@@ -72,7 +72,7 @@
                 preloadImages: true,
                 noSwiping: true,
                 loop: false,
-                initialSlide: 0,
+                initialSlide: 1,
                 speed: 300,
                 spaceBetween: 0,
                 // 回调函数
