@@ -71,6 +71,8 @@
                 updateOnImagesReady: true,
                 preloadImages: true,
                 noSwiping: true,
+                // allowSwipeToPrev: false,
+                // swipeHandler: ".swipe-handler",
                 loop: false,
                 // freeMode: true,
                 initialSlide: 0,

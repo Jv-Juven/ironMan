@@ -15,7 +15,7 @@
 			// 微信头设置
 			setwx({
 			 	debug: false,
-			 	title: "边个係你心目中嘅Super Hero?",
+			 	title: "香港迪士尼乐园，超级英雄“铁”粉大召集！",
 			 	desc: "“铁”粉大召集，神秘人物带你酷炫飞越香港上空!",
 			 	imgurl: "http://oiq5sba05.bkt.clouddn.com/WechatIMG104.jpeg",
 			});

@@ -1,15 +1,18 @@
 <template>
-    <div class="swiper-slide swiper-no-swiping single-page" id="page2">
+    <div class="swiper-slide single-page" id="page2"> <!-- swiper-no-swiping -->
 
         <img class="scale-screen" src="../../static/images/page2/P2.jpg" alt=""></img>
+        <img class="scale-screen display-none page-logo page2-logo-c" src="../../static/images/page1/page_logo.png" alt=""></img>
         <img class="title1" src="../../static/images/page2/title1.png" alt=""></img>
         <img class="title2" src="../../static/images/page2/title2.png" alt=""></img>
         <img class="title21" src="../../static/images/page2/title21.png" alt=""></img>
         <img class="title22 stripe" src="../../static/images/page2/title22.png" alt=""></img>
         <img class="title23" src="../../static/images/page2/title23.png" alt=""></img>
         <img class="arrow-up floating" src="../../static/images/index/arrow.png" alt="">
-
-        <intro-cover></intro-cover>
+        <!-- 说明浮层 -->
+        <intro-cover
+            class="swipe-handler"
+        ></intro-cover>
     </div>
 </template>
 <script type="text/javascript">
@@ -21,11 +24,13 @@
         },
         ready() {
             // 页面函数队列
-            this.pushFuncs(() => {
+            this.pushFuncs((container, swiper, _this) => {
+                // container.swipeHandler = ".swipe-handler"; // 只能拖动某个区域
                 console.log("002");
                 $(".title1").show().addClass("animated rotateIn");
                 $(".title2").show().addClass("animated lightSpeedIn");
                 $(".title22").show().addClass("animated fadeIn zy-count");
+                setTimeout(() => { $(".page2-logo-c").show().addClass("animated bounceInDown"); }, 300);
             });
         },
         components: {
@@ -38,21 +43,22 @@
 </style>
 <style lang="less" scoped>
     .title1{
-        @w: 660px;
+        @w: 560px;
         width: @w;
         position: absolute;
         z-index: 1;
-        top: 170px;
+        top: 50%;
         left: 50%;
 
         margin: 0 -@w/2;
+        margin-top: 280px;
         display: none;
     }
     .title2{
         width: 352px;
         position: absolute;
         z-index: 3;
-        top: 488px;
+        top: 590px;
         left: 200px;
         display: none;
     }
@@ -60,14 +66,14 @@
         width: 685px;
         position: absolute;
         z-index: 1;
-        top: 579px;
+        top: 675px;
         left: 40px;
     }
     .title22{
         width: 596px;
         position: absolute;
         z-index: 1;
-        top: 490px;
+        top: 586px;
         left: 80px;
         display: none;
     }
@@ -75,7 +81,11 @@
         width: 575px;
         position: absolute;
         z-index: 1;
-        top: 344px;
+        top: 440px;
         left: 88px;
+    }
+
+    .page-logo {
+        margin-top: -140px;
     }
 </style>

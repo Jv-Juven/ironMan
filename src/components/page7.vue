@@ -196,7 +196,7 @@
         width: 100%;
     }
     .no-lottery-words {
-        top: 200px;
+        top: 240px;
     }
     .input {
         @w: 380px;

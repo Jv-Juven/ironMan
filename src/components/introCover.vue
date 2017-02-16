@@ -2,17 +2,16 @@
     <div id="intro_cover" class="scale-screen intro-pannel body-wrapper">
         <div class="scale-screen mask"></div>
         <div id="intro_body" class="scale-screen body">
-            <header id="intro_header" class="header-title">
+            <header id="intro_header" class="swiper-no-swiping header-title">
                 活动说明
             </header>
-            <main id="intro_main" class="swiper-container main-wrapper">
-                <div class="swiper-wrapper content-wrapper">
-                    <div id="swiper_slide" class="swiper-slide slide">
+            <main id="intro_main" class="swiper-container main-wrapper introCover-swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide introCover-content">
                         <p class="content p">
                             活动主办：
                             南方都市报
                         </p>
-
                         <p class="content p">
                             活动地区：
                             广东地区
@@ -65,16 +64,103 @@
                             3.参加者应自行决定是否通过互联网下载或以其他方式获得资料，并且一切风险应由参加者自行承担。如下载资料导致其电脑系统遭受任何损害或数据损失，须由参加者自行负责；
                             4.资料截止至2017年1月22日，其后如有更改，恕不另行通告。对于第三方产品或服务质素或适用性，或本页内容差误或遗漏，主办方恕不负责。
                         </p>
+
+                        <p class="p" style="text-align: center;">
+                            Activity Description
+                        </p>
+
+                        <p class="content p">
+                            Sponsored by:
+                        </p>
+                        <p class="content">
+                            Southern Metropolis Daily
+                        </p>
+
+                        <p class="content p">
+                            Activity Area:
+                        </p>
+                        <p class="content">
+                            Guangdong
+                        </p>
+
+                        <p class="content p">
+                            Way of participation:
+                        </p>
+                        <p class="content">
+                            During the activity, as long as the users participate in the Super heroes iron-man-fans convening activity for Iron Man Experience organized by Hong Kong Disneyland and vote in the interactive part "to choose what you most want to participate in the Ironman thematic program (multiple choices)”, you can draw lottery and get chances for gifts by "turning the wheel to winning the gifts" lottery draw and may win gifts.
+                        </p>
+
+                        <p class="content p">
+                            Prizes:
+                        </p>
+                        <p class="content">
+                            There are 30 Hong Kong Disneyland Iron Man thematic stunning gifts, 1 piece for each winner and totally 30 pieces;
+(The sponsor shall not be responsible for the quality or practicability of the products or services provided by the third party.) Hong Kong Disneyland has the right of final interpretation on the detailed terms and conditions governing the use of the prizes.
+                        </p>
+
+                        <p class="content p">
+                            Instructions for Prize Claiming:
+                        </p>
+                        <p class="content">
+                            1. Each wechat ID can only join the lucky draw for one time. Prize winners fill in the real and accurate names and mobile phone numbers and then submit. Our staff will inform you by phone to take gifts. The winners should ensure that the personal contact information submitted is accurate and be liable for the consequences due to wrong contact information or failure of submitting.
+                        </p>
+                        <p class="content">
+                            2. Any winners who fail to get in touch with us within 5 working days from the date of prize announcement shall be deemed to have voluntarily waived their prize-winning status.
+                        </p>
+
+                        <p class="content p">
+                            Agreement and Declarations:
+                        </p>
+                        <p class="content">
+                            1. Only citizens of mainland China with domestic correspondence addresses have the access to the activities, which means citizens from Hong Kong, Macao and Taiwan regions are excluded;
+                        </p>
+                        <p class="content">
+                            2. The sponsor has the right to adjust the specific procedure of prize claiming;
+                        </p>
+                        <p class="content">
+                            3. the specific prizes will be what they are physically; the sponsor is not responsible for the tax payable by the prize winners; prizes cannot be converted into cash or assigned to other people.
+                        </p>
+                        <p class="content">
+                            4. To be fair, employees of the sponsor, advertising agency and the sponsor’s partners for this activity and their family members shall not participate in the lottery drawing activity for the purpose of fairness;
+                        </p>
+                        <p class="content">
+                            5. The activity is organized by the Southern Metropolis Daily and it has the right to terminate this activity at any time without prior notice and the right of final interpretation;
+                        </p>
+                        <p class="content">
+                            6. Applicable law: The provisions set out in this description are subject to the laws of the People's Republic of China.
+                        </p>
+
+                        <p class="content p">
+                            Additional disclaimer:
+                        </p>
+
+                        <p class="content p">
+                            Southern Metropolis Daily, its agents and contractors for implementation and management for this activity hereby declare:
+                        </p>
+                        <p class="content">
+                            1. Any online dissemination of computer viruses is not allowed. If the activity gets involved in the online dissemination of computer viruses which causes computer system damage to the participants, the activity sponsor is not liable;
+                        </p>
+                        <p class="content">
+                            2. Participants are not permitted to upload anything that are unlawful, harmful, intimidating, abusive, harassing, tortious, defamatory, vulgar, obscene, slanderous, privacy-invasive, of hatred, morally, racially, ethnically or otherwise objectionable, or in violation of any national or any other legally binding regulations. The participants is responsible for the contents they upload. The participants shall fully and effectively indemnify the sponsor for all costs, claims and damages arising out of or in connection with their participation, either directly or indirectly;
+                        </p>
+                        <p class="content">
+                            3. Participants should decide at their own discretion whether to download from the internet or otherwise obtain the activity information, and all risks should be borne by the participants themselves. Any loss or damage to the computer system caused by the downloading of the data shall be the responsibility of the participants;
+                        </p>
+                        <p class="content">
+                            4. Information will expire on January 22nd, 2017. If there will be any variation, no notification will be made to participants. The sponsor has no responsibility under any circumstances for quality of the products or services provided by the third party or any errors or omissions in the content of this page.
+                        </p>
                     </div>
                 </div>
+                <div class="swiper-scrollbar">
+                    <div class="swiper-scrollbar-drag"></div>
+                </div>
 
-                <div class="swiper-scrollbar"></div>
             </main>
-            <footer id="intro_footer" class="footer-wrapper">
+            <footer id="intro_footer" class="swiper-no-swiping footer-wrapper">
                 <!-- <div class="btn">
                 我知道了
             </div> -->
-            <img id="btn" class="btn" src="../../static/images/page2/btn.png" alt="">
+            <img id="btn" class="swiper-no-swiping btn" src="../../static/images/page2/btn.png" alt="">
         </footer>
         </div>
     </div>
@@ -123,15 +209,21 @@ export default {
             let headerHeight = header.clientHeight;
             let mainHeight = main.clientHeight;
             let footerHeight = footer.clientHeight;
-            let mainLoadedHeight = bodyHeight - headerHeight - footerHeight;
-            main.style.height = mainLoadedHeight + "px";
+            main.style.height = (bodyHeight - headerHeight - footerHeight) + "px";
+            console.log("height", main.style.height);
 
-            console.log("mainHeight", mainHeight);
-            scrollTouch(document.getElementById("swiper_slide"), {
-                thresholdVal: -(mainHeight - mainLoadedHeight + 60)
+            /**
+             * 内容滚动区，父元素必须先确定，子元素高度比较父元素
+             * @type {Swiper}
+             */
+            new Swiper (".introCover-swiper-container", {
+                scrollbar: '.swiper-scrollbar',
+                direction: 'vertical',
+                slidesPerView: 'auto',
+                mousewheelControl: true,
+                freeMode: true
             });
-            // initSlide();
-        }, 1000);
+        }, 0);
 
         $("#btn").click(() => {
             $("#intro_cover").fadeOut(400);
@@ -174,12 +266,15 @@ export default {
         line-height: 140px;
     }
     .main-wrapper {
-        width: 90%;
+        @padding: 20px;
+
+        width: 100%;
+        padding-left: @padding;
+        padding-right: @padding;
         margin-right: auto;
         margin-left: auto;
-        overflow: scroll;
-        transform: translate3d(0, 0, 0);
-        -webkit-overflow-scrolling: touch;
+        box-sizing: border-box;
+        // overflow: scroll;
 
         .content {
             font-size: 28px; /*px*/
@@ -225,8 +320,8 @@ export default {
     .scrollbar::-webkit-scrollbar-thumb {
         background: transparent;
     }
-    // .swiper-slide {
-    //     height: auto;
-    //     overflow: visible;
-    // }
+
+    .introCover-content {
+        height: auto;
+    }
 </style>

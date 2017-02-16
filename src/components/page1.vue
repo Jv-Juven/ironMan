@@ -3,6 +3,7 @@
         <!-- <img class="scale-screen heros" src="../../static/images/page1/heros.png" alt=""></img> -->
         <img class="scale-screen" src="../../static/images/page1/P1.jpg" alt=""></img>
         <img class="scale-screen" src="../../static/images/page1/copyright.png" alt=""></img>
+        <img class="scale-screen display-none page1-logo-c" src="../../static/images/page1/page_logo.png" alt=""></img>
         <div class="who display-none">
             <img class="title" src="../../static/images/page1/who.png" width="90%" alt="">
             <div class="title-border-1 alternate-flash"></div>
@@ -30,6 +31,9 @@
                 console.log("001");
                 // $(".heros").addClass("animated slideInRight");
                 setTimeout(() => { $(".who").show().addClass("animated bounceIn"); }, 800);
+                setTimeout(() => { $(".who").show().addClass("animated bounceIn"); }, 800);
+                setTimeout(() => { $(".page1-logo-c").show().addClass("animated bounceInDown"); }, 0);
+
                 //$(".lighting").addClass("animated fadeIn zy-count");
             });
 
@@ -44,13 +48,13 @@
         width: 432px;
         height: 177px;
         top: 50%;
-        border:18px solid #1a1a1a;
+        border: 18px solid #1a1a1a;
         background: #034760;
         position: absolute;
         text-align: center;
         // top: 224px;
         left: 149px;
-        margin-top: -160px;
+        margin-top: 50px;
     }
     .who .title{
         margin-top: 7%;
