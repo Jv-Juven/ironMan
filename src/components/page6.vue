@@ -51,8 +51,8 @@
             // 抽奖
             lottery() {
                 let thisVm = this;
-                let url = "http://makerh5.com:1227/lottery";
-                // let url = "http://localhost:1227/lottery";
+                // let url = "http://makerh5.com:1227/lottery";
+                let url = "http://localhost:1227/lottery";
                 let csrfToken = "Super Hero";
                 // $.get(url, (res) => {
                 //     console.info(res);

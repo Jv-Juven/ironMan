@@ -7,7 +7,7 @@
         <div class="star star3"></div>
         <div class="star star4"></div>
         <!-- 中奖 -->
-        <img class="display-none full-width input-c" src="../../static/images/page7/inputs.png" alt="">
+        <img class="display-none full-width input-bg input-c" src="../../static/images/page7/inputs.png" alt="">
         <!-- 中奖提示 -->
         <img class="display-none lottery-words award-type-1" src="../../static/images/page7/tongxingzheng_words.png" alt="">
         <img class="display-none lottery-words award-type-2" src="../../static/images/page7/beibao.png" alt="">
@@ -188,15 +188,25 @@
     @import "~swiper/src/less/swiper.less";
 
     @btn_w: 220px;
+
     .lottery-words {
+        @w: 600px;
         position: absolute;
         top: 130px;
-        left: 0;
+        left: 50%;
+        margin: 0 -@w/2;
 
-        width: 100%;
+        width: @w;
     }
     .no-lottery-words {
         top: 240px;
+        left: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .input-bg {
+        margin-top: -30px;
     }
     .input {
         @w: 380px;
@@ -218,14 +228,14 @@
         }
     }
     .input.phone {
-        top: 594px;
+        top: 564px;
     }
     .input.username {
-        top: 512px;
+        top: 482px;
     }
     .botton {
         position: absolute;
-        top: 800px;
+        top: 700px;
 
         width: @btn_w;
     }

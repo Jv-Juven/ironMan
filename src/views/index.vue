@@ -175,4 +175,8 @@
         margin: 0 -@w/2;
     }
 
+    .star {
+        display: none;
+    }
+
 </style>
