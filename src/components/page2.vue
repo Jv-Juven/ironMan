@@ -1,5 +1,5 @@
 <template>
-    <div class="swiper-slide swiper-no-swiping single-page" id="page2">
+    <div class="swiper-slide single-page" id="page2"> <!-- swiper-no-swiping -->
 
         <img class="scale-screen" src="../../static/images/page2/P2.jpg" alt=""></img>
         <img class="title1" src="../../static/images/page2/title1.png" alt=""></img>
@@ -8,8 +8,10 @@
         <img class="title22 stripe" src="../../static/images/page2/title22.png" alt=""></img>
         <img class="title23" src="../../static/images/page2/title23.png" alt=""></img>
         <img class="arrow-up floating" src="../../static/images/index/arrow.png" alt="">
-
-        <intro-cover></intro-cover>
+        <!-- 说明浮层 -->
+        <intro-cover
+            class="swipe-handler"
+        ></intro-cover>
     </div>
 </template>
 <script type="text/javascript">
@@ -21,7 +23,8 @@
         },
         ready() {
             // 页面函数队列
-            this.pushFuncs(() => {
+            this.pushFuncs((container, swiper, _this) => {
+                // container.swipeHandler = ".swipe-handler"; // 只能拖动某个区域
                 console.log("002");
                 $(".title1").show().addClass("animated rotateIn");
                 $(".title2").show().addClass("animated lightSpeedIn");

@@ -71,8 +71,10 @@
                 updateOnImagesReady: true,
                 preloadImages: true,
                 noSwiping: true,
+                // allowSwipeToPrev: false,
+                swipeHandler: ".swipe-handler",
                 loop: false,
-                initialSlide: 1,
+                initialSlide: 0,
                 speed: 300,
                 spaceBetween: 0,
                 // 回调函数
