@@ -17,7 +17,7 @@
             <page7></page7>
         </div>
     </div>
-    <music></music>
+    <!-- <music></music> -->
 
 </template>
 <script type="text/javascript">
@@ -27,7 +27,7 @@
     import util from "util/pages";
     import * as getters from 'data/getters';
     import Loading from "components/loading";
-    import Music from "components/music";
+    // import Music from "components/music";
     import Page1 from "components/page1";
     import Page2 from "components/page2";
     import Page3 from "components/page3";
@@ -46,7 +46,7 @@
         },
         components: {
             Loading,
-            Music,
+            // Music,
             Page1,
             Page2,
             Page3,
