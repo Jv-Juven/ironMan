@@ -58,7 +58,7 @@
         width: 352px;
         position: absolute;
         z-index: 3;
-        top: 540px;
+        top: 520px;
         left: 200px;
         display: none;
     }
@@ -66,14 +66,14 @@
         width: 685px;
         position: absolute;
         z-index: 1;
-        top: 625px;
+        top: 605px;
         left: 40px;
     }
     .title22{
         width: 596px;
         position: absolute;
         z-index: 1;
-        top: 536px;
+        top: 516px;
         left: 80px;
         display: none;
     }
@@ -81,7 +81,7 @@
         width: 575px;
         position: absolute;
         z-index: 1;
-        top: 390px;
+        top: 370px;
         left: 88px;
     }
 
