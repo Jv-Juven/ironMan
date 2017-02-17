@@ -18,7 +18,7 @@
                         </p>
                         <p class="content p">
                             活动时间：
-                            2017年1月16日-1月22日
+                            2017年2月23日-3月8日
                         </p>
                         <p class="content p">
                             参与方式：
@@ -81,6 +81,13 @@
                         </p>
                         <p class="content">
                             Guangdong
+                        </p>
+
+                        <p class="content p">
+                            Activity time:
+                        </p>
+                        <p class="content">
+                            Feb.23rd, 2017 – Mar. 8th, 2017
                         </p>
 
                         <p class="content p">
@@ -176,61 +183,36 @@ export default {
     },
     computed: {},
     ready: function () {
-
-        function initSlide() {
-            // let introSwiper = new Swiper(".main-wrapper", {
-            //     direction: "vertical",
-            //     freeMode: true,
-            //     slidesPerView: 'auto',
-            //     scrollbar: '.swiper-scrollbar',
-            //     mousewheelControl: true
-            // });
-
-            // var introSwiper = new Swiper('.main-wrapper', {
-            //     scrollbar: '.swiper-scrollbar',
-            //     direction: 'vertical',
-            //     slidesPerView: 'auto',
-            //     mousewheelControl: true,
-            //     freeMode: true
-            // });
-            //
-            // console.log(introSwiper);
-            //
-
-        }
-
         // 设置中间的高度
         setTimeout(() => {
-            let body = document.getElementById("intro_body");
-            let header = document.getElementById("intro_header");
-            let main = document.getElementById("intro_main");
-            let footer = document.getElementById("intro_footer");
-            let bodyHeight = body.clientHeight;
-            let headerHeight = header.clientHeight;
-            let mainHeight = main.clientHeight;
-            let footerHeight = footer.clientHeight;
-            main.style.height = (bodyHeight - headerHeight - footerHeight) + "px";
-            console.log("height", main.style.height);
-
-            /**
-             * 内容滚动区，父元素必须先确定，子元素高度比较父元素
-             * @type {Swiper}
-             */
-            new Swiper (".introCover-swiper-container", {
-                scrollbar: '.swiper-scrollbar',
-                direction: 'vertical',
-                slidesPerView: 'auto',
-                mousewheelControl: true,
-                freeMode: true
-            });
+            // let body = document.getElementById("intro_body");
+            // let header = document.getElementById("intro_header");
+            // let main = document.getElementById("intro_main");
+            // let footer = document.getElementById("intro_footer");
+            // let bodyHeight = body.clientHeight;
+            // let headerHeight = header.clientHeight;
+            // let mainHeight = main.clientHeight;
+            // let footerHeight = footer.clientHeight;
+            // main.style.height = (bodyHeight - headerHeight - footerHeight) + "px";
+            // console.log("height", main.style.height);
         }, 0);
+
+        /**
+         * 内容滚动区，父元素必须先确定，子元素高度比较父元素
+         * @type {Swiper}
+         */
+        new Swiper (".introCover-swiper-container", {
+            scrollbar: '.swiper-scrollbar',
+            direction: 'vertical',
+            slidesPerView: 'auto',
+            mousewheelControl: true,
+            freeMode: true
+        });
 
         $("#btn").click(() => {
             $("#intro_cover").fadeOut(400);
             $("#page2").removeClass("swiper-no-swiping");
         });
-
-
     },
     attached: function () {},
     methods: {},
@@ -267,6 +249,10 @@ export default {
     }
     .main-wrapper {
         @padding: 20px;
+
+        position: absolute;
+        top: 140px;
+        bottom: 200px;
 
         width: 100%;
         padding-left: @padding;
