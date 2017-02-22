@@ -18,7 +18,7 @@
                         </p>
                         <p class="content p">
                             活动时间：
-                            2017年2月23日-3月8日
+                            2017年2月22日-3月7日
                         </p>
                         <p class="content p">
                             参与方式：
@@ -62,7 +62,7 @@
                             1.不容许任何网上方式散播电脑病毒，如因本活动涉及的网上方式散播电脑病毒而对参加者的电脑系统造成损害，活动主办方恕不负责；
                             2.不容许参加者上载任何非法的、有害的、恐吓性的、辱骂性的、骚扰性的、民事侵权的、破坏名誉的、粗俗的、淫秽的、诽谤的、侵犯他人私隐的、仇恨性的、道德上、在种族、人种等方面或其他方面会引起反感、或违反任何国家或其他任何具法律效力的规则的内容，参加者所上载的内容由参加者自行负责。而参加者应全部且有效地赔偿主办方任何直接地或间接地因参加者参加此次活动而引起或造成之所有费用、请求及损害；
                             3.参加者应自行决定是否通过互联网下载或以其他方式获得资料，并且一切风险应由参加者自行承担。如下载资料导致其电脑系统遭受任何损害或数据损失，须由参加者自行负责；
-                            4.资料截止至2017年1月22日，其后如有更改，恕不另行通告。对于第三方产品或服务质素或适用性，或本页内容差误或遗漏，主办方恕不负责。
+                            4.资料截止至2017年3月7日，其后如有更改，恕不另行通告。对于第三方产品或服务质素或适用性，或本页内容差误或遗漏，主办方恕不负责。
                         </p>
 
                         <p class="p" style="text-align: center;">
@@ -87,7 +87,7 @@
                             Activity time:
                         </p>
                         <p class="content">
-                            Feb.23rd, 2017 – Mar. 8th, 2017
+                            Feb.22nd, 2017 – Mar. 7th, 2017
                         </p>
 
                         <p class="content p">
@@ -154,7 +154,7 @@
                             3. Participants should decide at their own discretion whether to download from the internet or otherwise obtain the activity information, and all risks should be borne by the participants themselves. Any loss or damage to the computer system caused by the downloading of the data shall be the responsibility of the participants;
                         </p>
                         <p class="content">
-                            4. Information will expire on January 22nd, 2017. If there will be any variation, no notification will be made to participants. The sponsor has no responsibility under any circumstances for quality of the products or services provided by the third party or any errors or omissions in the content of this page.
+                            4. Information will expire on March 7th, 2017. If there will be any variation, no notification will be made to participants. The sponsor has no responsibility under any circumstances for quality of the products or services provided by the third party or any errors or omissions in the content of this page.
                         </p>
                     </div>
                 </div>
