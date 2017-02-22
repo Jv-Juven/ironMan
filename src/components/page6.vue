@@ -23,7 +23,7 @@
         <!-- 字，标语 -->
         <img class="slogan slogan-c" src="../../static/images/page6/lottery_slogan.png" alt="">
 
-        <button @click="delCookie" style="position: absolute;z-index: 999;">清楚token</button>
+        <!-- <button @click="delCookie" style="position: absolute;z-index: 999;">清楚token</button> -->
         <div id="block" class="turn-plate"></div>
     </div>
 </template>
